@@ -21,10 +21,12 @@ h1 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .box {
-  height: 130px;
+  height: 150px;
   background-image: linear-gradient(to top, #f1f4f6 0%, #ffffff 100%);
   display: flex;
   justify-content: space-between;
@@ -32,7 +34,7 @@ h1 {
   min-width: 300px;
   border-radius: 5px;
   max-width: 60%;
-  margin: 20px auto;
+  margin: 20px;
 }
 .box .btn {
   width: 100%;
