@@ -48,7 +48,7 @@ h1 {
   font-size: 30px;
 }
 
-button {
+.link-btn {
   width: 70%;
   margin: 20px auto;
   border: none;
@@ -59,7 +59,69 @@ button {
   font-weight: bold;
 }
 
-button:hover {
+.link-btn:hover {
   background-color: rgb(39, 111, 39);
   transition-duration: 1s;
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
+
+.modal {
+  width: fit-content;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 0px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.close-button {
+  position: relative;
+  z-index: 10;
+}
+.close-button:hover {
+  background-color: rgb(220, 16, 16);
+}
+
+.copy-close {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+  margin: 10px auto;
+}
+.copy-close button {
+  width: 80%;
+  margin: 0px auto;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 0px;
+}
+
+li {
+  margin: 10px 0px;
+  list-style: none;
+}
+
+button:nth-last-child(2) {
+  background-color: lime;
+}
+button:nth-last-child(2):hover {
+  background-color: rgb(5, 212, 5);
+}
+
+/* Copy Modal */
+.modalCopy {
+  padding: 3px 6px;
+  border-radius: 2px;
+  margin: 3px auto;
+  border: none;
+}
+.modalCopy i {
+  color: lime;
+  margin: 0px 3px;
 }
